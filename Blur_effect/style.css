@@ -2,16 +2,37 @@ body {
     display: flex;
     justify-content: center;
     padding: 3rem 0;
-  }
-  div {
-    position: relative;
+}
+
+div {
     overflow: hidden;
+    position: relative;
     width: 300px;
     height: 200px;
-  }
-  div img {
+}
+
+div img {
     position: absolute;
     top: 0;
     left: 0;
-  }
-  
+}
+
+div:hover {
+    filter: blur(2px);
+    animation-name: blureffect;
+    animation-duration: 1s;
+    animation-iteration-count: 2;
+}
+
+/* pas besoin de transition avec le keyframes */
+
+@keyframes blureffect {
+    from {
+        transform: scale(1) rotate(0deg);
+    }
+
+    to {
+        transform: scale(2) rotate(20deg);
+
+    }
+}

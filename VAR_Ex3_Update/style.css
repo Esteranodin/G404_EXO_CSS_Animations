@@ -1,0 +1,94 @@
+:root {
+    --spacing: 5vh;
+    --blur: 10vh;
+    --color: #B03602;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #1d1f20;
+    text-align: center;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+h2 {
+    color: var(--color);
+    font-size: 28px;
+    font-weight: normal;
+    margin: 0 0 12px 0;
+}
+
+.controls {
+    display: inline-block;
+    text-align: right;
+    margin: 0 0 20px 0;
+    padding: 10px;
+}
+
+label {
+    padding: 0 20px;
+    line-height: 24px;
+    font-size: 18px;
+    display: inline-block;
+    text-align: right;
+    position: relative;
+    top: -5px;
+}
+
+img {
+    width: 45vh;
+    height: 70vh;
+    min-width: 140px;
+    min-height: 210px;
+    padding: var(--spacing);
+    background: var(--color);
+    filter: blur(var(--blur));
+}
+
+input {
+    width: 140px;
+}
+
+.shift {
+    position: relative;
+}
+
+label.shift {
+    top: 0;
+    left: -6px;
+}
+
+input.shift {
+    width: 134px;
+    left: -6px;
+}
+
+.left-side,
+.right-side {
+    display: inline-block;
+    padding: 20px;
+    vertical-align: top;
+}
+
+.left-side {
+    text-align: right;
+}
+
+.right-side {
+    text-align: center;
+    cursor: pointer;
+}
+
+.right-side p {
+    text-transform: uppercase;
+    filter: blur(var(--blur));
+    font-weight: 900;
+}
+
+.page {
+    vertical-align: top;
+    padding-top: 4vh;
+}

@@ -1,0 +1,35 @@
+:root {
+    --bg-color: black;
+    --color: white;
+}
+
+.btn {
+    padding: 2rem 4rem;
+    border: 2px solid var(--bg-color);
+    background: transparent;
+    font-size: 1.6em;
+    border-radius: 2px;
+}
+
+.btn:hover{
+    background-color: var(--bg-color);
+    color: var(--color);
+}
+
+.red {
+    --bg-color: red;
+}
+
+.green {
+   --bg-color: green;
+}
+
+.yellow {
+    --bg-color: yellow;
+    --color: black;
+}
+
+.blue {
+    --bg-color: blue;
+}
+

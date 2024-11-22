@@ -1,0 +1,56 @@
+:root {
+    --main-color : green;
+}
+
+
+* {
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+  text-align: center;
+}
+html,
+body {
+  height: 100%;
+}
+header {
+    background-color: var(--main-color);
+}
+.subtitle {
+    background-color: var(--main-color);
+    filter: contrast(70%);
+}
+h1 {
+  margin: 0;
+  padding: 1rem;
+  color: white;
+}
+.subtitle {
+  padding: 0.5rem 1rem;
+}
+main {
+  flex: 1;
+  padding: 1rem;
+}
+main > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+}
+input {
+  width: 120px;
+  height: 40px;
+}
+h3 {
+  margin-top: 1rem;
+}
+footer {
+  padding: 1rem;
+  background-color: var(--main-color);
+
+}

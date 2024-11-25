@@ -22,6 +22,8 @@ header {
 .subtitle {
     background-color: var(--main-color);
     filter: contrast(70%);
+
+    /* pour rendre plus sombre possile aussi d'appliquer un bg-color noir avec une opacité faible = mettre un filtre */
 }
 h1 {
   margin: 0;

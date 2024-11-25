@@ -24,3 +24,6 @@ function handleBlurChoose(event) {
     const spacingValue = event.target.dataset.sizing;
     root.style.setProperty('--spacing', spacingPick + spacingValue);
 };
+
+// vu que les éléments ont un name c'était possible de faire une seule fonction avce forEach
+// if (event.target.name === "color")
